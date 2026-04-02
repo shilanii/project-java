@@ -35,7 +35,7 @@ public class Main {
             System.out.println("5. Delete Student");
             System.out.println("6. Exit");
 
-            choice = getChoice(); // ✅ strict validation
+            choice = getChoice(); 
 
             switch (choice) {
                 case 1: addStudent(); break;
@@ -50,7 +50,7 @@ public class Main {
         } while (choice != 6);
     }
 
-    // ✅ Choice validation (no empty, no wrong input)
+    
     static int getChoice() {
         while (true) {
             System.out.print("Enter your choice: ");
@@ -69,7 +69,7 @@ public class Main {
         }
     }
 
-    // ✅ Integer validation (for ID, Age)
+    
     static int getValidInt(String message) {
         while (true) {
             System.out.print(message);
@@ -88,7 +88,7 @@ public class Main {
         }
     }
 
-    // ✅ String validation (for name, course)
+    
     static String getValidString(String message) {
         while (true) {
             System.out.print(message);
